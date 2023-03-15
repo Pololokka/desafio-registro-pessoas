@@ -180,6 +180,8 @@ select {
   --cor-hover-1: #892990;
   --cor-hover-2: #ed217a;
 
+  --cor-borda: #0a0738;
+
   --cor-btn: #892990;
   --cor-fonte-btn-hover: #6dbffa;
 
@@ -201,6 +203,10 @@ html {
   padding: 0.5em;
 }
 
+.App {
+  padding: 0 5em;
+}
+
 .titulo {
   font-family: var(--fonte-principal);
   color: var(--cor-fonte);
@@ -210,8 +216,21 @@ html {
   display: inline-block;
 }
 
-.sombra-titulo-hover:hover {
+.titulo-hover:hover {
   text-shadow: -4px 2px var(--cor-hover-1), -8px 4px var(--cor-hover-2);
+}
+
+.subtitulo {
+  font-family: var(--fonte-geral);
+  color: var(--cor-fonte);
+  font-size: var(--tamanho-fonte-subtitulo);
+  transition: 200ms;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.subtitulo-hover:hover {
+  text-shadow: -4px 2px var(--cor-hover-1);
 }
 
 .texto {
@@ -223,10 +242,16 @@ html {
   display: inline-block;
 }
 
+.texto-hover:hover {
+  text-shadow: -2px 1px var(--cor-hover-2);
+  transition: 200ms;
+}
+
 .btn__geral {
   background-color: var(--cor-btn);
   cursor: pointer;
   border-radius: 10px;
+  margin: 1em;
   transition: 200ms;
   width: auto;
 }
@@ -238,4 +263,11 @@ html {
 
 .btn__geral:active {
   transform: scale(0.9);
+}
+
+.input__geral {
+  border-radius: 15px;
+  border: 4px solid var(--cor-borda);
+  width: 50%;
+  margin: 0.5em;
 }
