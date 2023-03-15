@@ -1,0 +1,7 @@
+.video-killed-the-radio-card {
+  background-color: var(--cor-card-3);
+  box-shadow: -4px 2px var(--cor-card-2);
+  border-radius: 10px;
+  padding: 0.25em;
+  margin: 0 0.5em;
+}
