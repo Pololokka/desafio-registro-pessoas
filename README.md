@@ -2,7 +2,7 @@
 
 # Registro de pessoas
 
-Registro de pessoas
+Um formulário onde o usuário pode preencher suas informações pessoais e preferências
 
 ## Tecnologias
 
@@ -15,7 +15,11 @@ Registro de pessoas
 
 ### Home
 
-Página onde o usuário pode adicionar seus links
+Página onde o usuário tem acesso ao formulário
+
+### Agradecimento
+
+Página onde o usuário tem acesso a suas respostas, e pode refazer o formulário
 
 ## Sobre
 
