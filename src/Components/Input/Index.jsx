@@ -1,4 +1,4 @@
-const Input = ({ name, title, type, value, info, setState }) => {
+const Input = ({ name, title, type, value, required, info, setState }) => {
   return (
     <>
       <label htmlFor={name} className="texto texto-hover">
@@ -10,6 +10,7 @@ const Input = ({ name, title, type, value, info, setState }) => {
         name={name}
         value={value}
         onChange={(event) => setState({ ...info, [name]: event.target.value })}
+        required={required}
       />
     </>
   );

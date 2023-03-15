@@ -1,7 +1,7 @@
 import "./Styles.css";
 
 import Input from "../Input/Index";
-import InputReq from "../InputReq/Index";
+//import InputReq from "../InputReq/Index";
 import InputRadio from "../InputRadio/Index";
 
 const Form = ({ info, setInfo, handleUpdate }) => {
@@ -17,30 +17,34 @@ const Form = ({ info, setInfo, handleUpdate }) => {
           title="Nome completo"
           type="text"
           value={info.name}
+          required={false}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="age"
           title="Idade"
           type="number"
           value={info.age}
+          required={true}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="gender"
           title="Genero"
           type="text"
           value={info.gender}
+          required={true}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="email"
           title="E-mail"
           type="text"
           value={info.email}
+          required={true}
           setState={setInfo}
           info={info}
         />
@@ -49,30 +53,34 @@ const Form = ({ info, setInfo, handleUpdate }) => {
           title="CPF"
           type="number"
           value={info.cpf}
+          required={false}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="genreF"
           title="Gênero favorito de filme ou série"
           type="text"
           value={info.genreF}
+          required={true}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="genreS"
           title="Segundo gênero favorito de filme ou série"
           type="text"
           value={info.genreS}
+          required={true}
           setState={setInfo}
           info={info}
         />
-        <InputReq
+        <Input
           name="genreT"
           title="Terceiro gênero favorito de filme ou série"
           type="text"
           value={info.genreT}
+          required={true}
           setState={setInfo}
           info={info}
         />
