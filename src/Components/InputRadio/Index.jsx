@@ -13,7 +13,7 @@ const InputRadio = ({ options, checkedRadio, setCheckedRadio }) => {
             <input
               type="radio"
               checked={isChecked === element.title}
-              onClick={() => setCheckedRadio({ isChecked: element.title })}
+              onChange={() => setCheckedRadio({ isChecked: element.title })}
               name={element.name}
               value={element.value}
               required
