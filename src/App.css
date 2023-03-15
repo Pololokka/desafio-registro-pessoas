@@ -207,6 +207,14 @@ html {
   padding: 0 5em;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .titulo {
   font-family: var(--fonte-principal);
   color: var(--cor-fonte);
@@ -270,4 +278,16 @@ html {
   border: 4px solid var(--cor-borda);
   width: 50%;
   margin: 0.5em;
+}
+
+.card__thanks {
+  background-color: var(--cor-card-centro);
+  border-radius: 15px;
+  box-shadow: -6px 6px var(--cor-sombra-card-centro-1);
+  padding: 1em;
+}
+
+.answer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

@@ -1,13 +1,17 @@
 import "./Styles.css";
 
 import Input from "../Input/Index";
-//import InputReq from "../InputReq/Index";
 import InputRadio from "../InputRadio/Index";
 
+import { useState } from "react";
+
 const Form = ({ info, setInfo, handleUpdate }) => {
+  const [checkedRadio, setCheckedRadio] = useState({
+    isChecked: "",
+  });
   return (
     <div>
-      <p className="subtitulo subtitulo-hover">Placeholder maneiro</p>
+      <p className="titulo titulo-hover">Preencha nossa pesquisa!</p>
       <form
         onSubmit={(event) => handleUpdate(event)}
         className="form__container"
@@ -92,15 +96,17 @@ const Form = ({ info, setInfo, handleUpdate }) => {
           >
             <InputRadio
               options={[
-                { title: "Longas", value: "feature", name: "pref" },
-                { title: "Curtas", value: "short", name: "pref" },
-                { title: "Série", value: "show", name: "pref" },
+                { title: "Longas", value: "Longas", name: "pref" },
+                { title: "Curtas", value: "Curtas", name: "pref" },
+                { title: "Série", value: "Série", name: "pref" },
                 {
                   title: "Mini-Série",
-                  value: "mini-series",
+                  value: "Mini-Série",
                   name: "pref",
                 },
               ]}
+              checkedRadio={checkedRadio}
+              setCheckedRadio={setCheckedRadio}
             />
           </div>
         </div>

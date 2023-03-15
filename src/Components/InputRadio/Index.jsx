@@ -1,14 +1,19 @@
-const InputRadio = ({ options }) => {
+import "./Style.css";
+
+const InputRadio = ({ options, checkedRadio, setCheckedRadio }) => {
+  const { isChecked } = checkedRadio;
   return (
     <>
       {options.map((element) => {
         return (
-          <div key={element.index}>
+          <div key={Math.random()} className="video-killed-the-radio-card">
             <label htmlFor="input-pref" className="texto">
               {element.title}
             </label>
             <input
               type="radio"
+              checked={isChecked === element.title}
+              onClick={() => setCheckedRadio({ isChecked: element.title })}
               name={element.name}
               value={element.value}
               required
